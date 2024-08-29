@@ -1,0 +1,111 @@
+.bala {
+    color: black;
+    transition-duration: 0,2s;
+}
+
+.bala:hover {
+    color: rgb(69, 69, 69);
+    transition-duration: 0.2s;
+}
+
+.clock-container {
+    transform: rotate(-90deg); /* چرخاندن کل بخش به اندازه 90 درجه در خلاف جهت عقربه‌های ساعت */
+    display: inline-block; /* حفظ بلوک به صورت درون‌خطی برای جلوگیری از مشکلات جانبی */
+}
+
+.clock {
+    width: 120px;
+    height: 120px;
+    border: 2px solid white; /* دور ساعت سفید */
+    border-radius: 50%;
+    background: black; /* پس‌زمینه ساعت مشکی */
+    position: relative;
+}
+
+.hour-hand {
+    position: absolute;
+    width: 35%; /* طول عقربه ساعت‌شمار کوتاه‌تر */
+    height: 2px;
+    background: white; /* رنگ عقربه ساعت‌شمار سفید */
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%; /* نقطه چرخش عقربه */
+    transform: rotate(90deg);
+    transition: transform 0.2s linear; /* حرکت نرم برای عقربه ساعت‌شمار */
+}
+
+.minute-hand {
+    position: absolute;
+    width: 52%; /* طول عقربه دقیقه‌شمار متوسط */
+    height: 2px;
+    background: white; /* رنگ عقربه دقیقه‌شمار سفید */
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%; /* نقطه چرخش عقربه */
+    transform: rotate(90deg);
+    transition: transform 0.2s linear; /* حرکت نرم برای عقربه دقیقه‌شمار */
+}
+
+.second-hand {
+    position: absolute;
+    width: 52%; /* طول عقربه ثانیه‌شمار بلندتر از همه */
+    height: 2px;
+    background: white; /* رنگ عقربه ثانیه‌شمار قرمز */
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%; /* نقطه چرخش عقربه */
+    transform: rotate(90deg);
+    transition: transform 0.1s linear; /* حرکت نرم‌تر برای عقربه ثانیه‌شمار */
+}
+
+.logom:hover {
+    box-shadow: 0px 0px 90px black;
+    transition-duration: 0.2s;
+}
+
+.logom {
+    transition-duration: 0.2s;
+    border-radius: 50%;
+}
+
+
+#header {
+    min-height: 100vh; /* ارتفاع کل صفحه */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* مرکز کردن محتوا به صورت عمودی */
+    align-items: center; /* مرکز کردن محتوا به صورت افقی */
+}
+
+.logos {
+    filter: grayscale(50%);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.logos:hover {
+    filter: grayscale(0%);
+    transition-duration: 0.2s;
+}
+
+.omega-watch {
+    position: relative;
+    bottom: 400px;
+    filter: grayscale(60%);
+    height: 600px;
+    transition-duration: 0.2s;
+    filter: blur(2px);
+    filter: opacity(30%);
+    order: -1;
+}
+
+
+.omega-name {
+    transition-duration: 0.2s;
+    color: rgb(109, 0, 0);
+}
+
+
+.gradient-bgd {
+    transition-duration: 5s;
+}
